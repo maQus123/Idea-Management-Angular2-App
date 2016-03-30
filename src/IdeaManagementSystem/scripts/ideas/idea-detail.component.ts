@@ -8,20 +8,6 @@ import {Router} from 'angular2/router';
 @Component({
     template: `
         <div class="container" style="margin-top:60px" role="main">
-            <div class="modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Delete Idea?</h4>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-danger">Delete</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h2>Idea</h2>
