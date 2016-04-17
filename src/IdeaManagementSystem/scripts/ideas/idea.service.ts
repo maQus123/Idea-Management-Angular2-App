@@ -9,7 +9,7 @@ export class IdeaService {
 
     private http: Http;
     private apiUrl: string = 'http://angular2-app.azurewebsites.net/api/idea/';
-    
+            
     constructor(http: Http) {
         this.http = http;
     }

@@ -8,15 +8,15 @@ import {Router} from 'angular2/router';
     template: `
         <div class="container" style="margin-top:60px" role="main">
             <h2>Ideas</h2>
-            <table class="table table-hover">
+            <table class="table table-hover table-responsive">
                 <tr>
-                    <th>Id</th>
+                    <th>Nr</th>
                     <th>Title</th>
                     <th>Category</th>
-                    <th>Is Secret</th>
+                    <th>Secret</th>
                 </tr>
-                <tr *ngFor="#idea of ideas" style="cursor: pointer;" (click)="onClickDetail(idea.id)">
-                    <td>{{idea.id}}</td>
+                <tr *ngFor="#idea of ideas; #nr = index" style="cursor: pointer;" (click)="onClickDetail(idea.id)">
+                    <td>{{nr+1}}</td>
                     <td>{{idea.title}}</td>
                     <td>{{idea.category}}</td>
                     <td>{{idea.isSecret}}</td>
