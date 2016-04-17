@@ -14,7 +14,8 @@ require('rxjs/add/operator/map');
 var http_2 = require('angular2/http');
 var IdeaService = (function () {
     function IdeaService(http) {
-        this.apiUrl = 'http://localhost:5000/api/idea/';
+        //private apiUrl: string = 'http://angular2-app.azurewebsites.net/api/idea/';
+        this.apiUrl = 'http://localhost:56631/api/idea/';
         this.http = http;
     }
     IdeaService.prototype.getAll = function () {
